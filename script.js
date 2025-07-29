@@ -54,7 +54,7 @@
     searchButton.disabled = true;
 
     try {
-      const apiUrl = `/api/peserta?query=${encodeURIComponent(searchTerm)}`;
+   const apiUrl = `https://racepak-backend-production.up.railway.app/api/peserta?query=${encodeURIComponent(searchTerm)}`;
       const response = await fetch(apiUrl);
 
       if (response.ok) {
