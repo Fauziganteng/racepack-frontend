@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CEK DATA PESERTA BOEDAR FUN RUN 5K 2025</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="antialiased">
+  <div class="container text-center">
+    <img src="/logo.png" alt="Logo Boedar" width="80" height="80" class="mx-auto mb-4" />
+    <h1 class="text-3xl font-bold text-gray-800 mb-8">
+      CEK DATA PESERTA BOEDAR FUNRUN 5K 2025
+    </h1>
+
+    <div class="mb-6 text-left">
+      <label for="searchInput" class="block text-gray-700 text-sm font-medium mb-2">
+        Masukkan ID Pembayaran atau Nama:
+      </label>
+      <input type="text" id="searchInput" placeholder="Contoh: BFR5K-21052025-0001 / Budi Santoso"
+        class="focus:ring-blue-500 focus:border-blue-500 w-full px-4 py-2 border border-gray-300 rounded-md" />
+    </div>
+
+    <div class="flex flex-col sm:flex-row gap-4 mb-8">
+      <button id="searchButton" class="w-full sm:w-auto flex-grow bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+        Cari Data
+      </button>
+    </div>
+
+    <div id="resultContainer" class="mt-6 p-4 bg-gray-50 rounded-lg border border-gray-200" style="display:none;">
+      <!-- Data peserta akan ditampilkan di sini -->
+    </div>
+
+    <div id="messageBox" class="message info" style="display:block;">
+      <p>Silakan masukkan ID Pendaftar atau Nama untuk mencari data.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
